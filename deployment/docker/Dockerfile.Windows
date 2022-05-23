@@ -11,8 +11,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-ARG OSVERSION
-FROM mcr.microsoft.com/windows/nanoserver:${OSVERSION}
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
 LABEL description="Local Volume Provisioner"
 
 ARG OS=windows
